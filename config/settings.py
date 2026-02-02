@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     "apps.data_ingestion",
     "apps.analytics_engine",
     "apps.visualization",
+    "apps.board",
 ]
 
 MIDDLEWARE = [
