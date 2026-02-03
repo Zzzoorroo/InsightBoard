@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>InsightBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>InsightBoard</h1>
+        <p id="status">Upload business data</p>
+
+        <form onsubmit="uploadAndAnalyze(event)">
+            <input type="file" id="fileInput">
+            <button type="submit">Analyze</button>
+        </form>
+
+        <div id="dashboard" style="display:none;">
+            <canvas id="barChart"></canvas>
+            <canvas id="lineChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
